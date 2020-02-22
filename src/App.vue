@@ -130,7 +130,7 @@
   @media only screen and (min-width: 750px) {
     .body {
       flex-basis: 60%;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
