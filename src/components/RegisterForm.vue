@@ -55,6 +55,7 @@
               rules="required"
               mode="lazy"
               v-slot="{ valid, errors }"
+              ref="name"
             >
               <b-form-group
                 id="input-group-1"
@@ -81,6 +82,7 @@
               rules="required|email"
               mode="lazy"
               v-slot="{ valid, errors }"
+              ref="email"
             >
               <b-form-group
                 id="input-group-2"
@@ -280,13 +282,26 @@
       },
       theCode() {
         return this.$route.query.code || null;
+      },
+      theName() {
+        return this.$route.query.name || null;
+      },
+      theEmail() {
+        return this.$route.query.email || null;
       }
     },
     mounted() {
       this.registrationData.code = this.theCode;
       this.$nextTick(() => {
-        if (this.registrationData.code) this.$refs.code.validate();
-      })
+        if (this.registrationData.code) {
+          this.$refs.code.validate().then(() => {
+            this.registrationData.name = this.theName;
+            this.registrationData.email = this.theEmail;
+            if (this.registrationData.name) this.$refs.name.validate();
+            if (this.registrationData.email) this.$refs.email.validate();
+          });
+        }
+      });
     },
     methods: {
       encode(data) {
