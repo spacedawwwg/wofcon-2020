@@ -2,7 +2,7 @@
   <div class="thanks">
     <p>Thanks, {{ theName }}!</p>
     <p>We're looking forward to seeing you on the 19th-20th September.</p>
-    <img src="@/assets/scarecrow.jpg" alt="Scarecrow" class="main__image" />
+    <img src="@/assets/scarecrow.jpg" alt="Scarecrow" class="main__image" width="365" height="455" />
     <p>
       If you need to make changes, feel free to edit your registration up to two
       weeks before the event. For more information email
