@@ -292,15 +292,12 @@
     },
     mounted() {
       this.registrationData.code = this.theCode;
+      this.registrationData.name = this.theName;
+      this.registrationData.email = this.theEmail;
       this.$nextTick(() => {
-        if (this.registrationData.code) {
-          this.$refs.code.validate().then(() => {
-            this.registrationData.name = this.theName;
-            this.registrationData.email = this.theEmail;
-            if (this.registrationData.name) this.$refs.name.validate();
-            if (this.registrationData.email) this.$refs.email.validate();
-          });
-        }
+        if (this.registrationData.code) this.$refs.code.validate();
+        if (this.registrationData.name) this.$refs.name.validate();
+        if (this.registrationData.email) this.$refs.email.validate();
       });
     },
     methods: {
