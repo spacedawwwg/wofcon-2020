@@ -125,7 +125,7 @@
   }
   .body {
     position: relative;
-    padding: 30px;
+    padding: 20px;
   }
   @media only screen and (min-width: 750px) {
     .body {
@@ -134,6 +134,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 30px;
     }
   }
   @media only screen and (min-width: 1000px) {
@@ -144,12 +145,17 @@
   .main {
     width: 100%;
     max-width: 500px;
-    padding: 30px;
+    padding: 20px;
     margin: 0 auto;
     overflow: hidden;
     background: #ffffff;
     border-radius: 5px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+  }
+  @media only screen and (min-width: 1000px) {
+    .main {
+      padding: 30px;
+    }
   }
   .main__header {
     /* text-align: center; */

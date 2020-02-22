@@ -59,6 +59,7 @@
   }
   .main__image {
     max-width: 365px;
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto 20px;
