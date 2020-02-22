@@ -3,7 +3,7 @@
     class="register-form"
     :class="{ 'register-form--submitting': submitting }"
   >
-    <div class="main__header" v-if="!this.$route.query.name">
+    <div class="main__header">
       <p class="main__body">
         To register, you must have already purchased a ticket for the event. If
         you haven't, you can find out how on

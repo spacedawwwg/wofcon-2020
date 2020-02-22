@@ -142,6 +142,8 @@
     }
   }
   .main {
+    width: 100%;
+    max-width: 500px;
     padding: 30px;
     margin: 0 auto;
     overflow: hidden;
