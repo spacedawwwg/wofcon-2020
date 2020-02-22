@@ -21,6 +21,7 @@
             rules="required|numeric|isValidCode"
             mode="lazy"
             v-slot="{ valid, errors }"
+            ref="code"
           >
             <b-form-group
               id="input-group-0"
@@ -283,6 +284,9 @@
     },
     mounted() {
       this.registrationData.code = this.theCode;
+      this.$nextTick(() => {
+        if (this.registrationData.code) this.$refs.code.validate();
+      })
     },
     methods: {
       encode(data) {

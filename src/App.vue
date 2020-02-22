@@ -29,7 +29,7 @@
   }
   html {
     background-color: #fff;
-    background-color: #000;
+    background-color: #a62c23;
     background-image: url('./assets/bg-2__mobile.jpg');
     background-size: cover;
     background-attachment: fixed;
