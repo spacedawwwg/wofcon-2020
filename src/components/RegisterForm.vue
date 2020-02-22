@@ -5,11 +5,12 @@
   >
     <div class="main__header">
       <p class="main__body">
-        To register, you must have already purchased a ticket for the event. If
-        you haven't, you can find out how on
+        To register, you must have already purchased a ticket for the event.
+        Visit our
         <a href="https://www.facebook.com/events/561636417895326">
-          our Facebook event page.
+          Facebook event page
         </a>
+        to find out how.
       </p>
     </div>
     <ValidationObserver tag="div" ref="observer" v-slot="{ passes }">
