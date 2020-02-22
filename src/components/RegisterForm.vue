@@ -276,7 +276,13 @@
     computed: {
       isValidCode() {
         return isValidCode(this.registrationData.code);
+      },
+      theCode() {
+        return this.$route.query.code || null;
       }
+    },
+    mounted() {
+      this.registrationData.code = this.theCode;
     },
     methods: {
       encode(data) {
