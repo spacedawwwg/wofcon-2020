@@ -1,8 +1,16 @@
 <template>
   <div class="thanks">
+    <h1 class="mb-3">
+      Registration Complete
+    </h1>
     <p>Thanks, {{ theName }}!</p>
     <p>We're looking forward to seeing you on the 19th-20th September.</p>
-    <img src="@/assets/scarecrow.jpg" alt="Scarecrow" class="main__image" width="365" height="455" />
+    <img
+      src="@/assets/scarecrow.jpg"
+      alt="Scarecrow"
+      width="365"
+      height="455"
+    />
     <p>
       If you need to make changes, feel free to edit your registration up to two
       weeks before the event. For more information email
@@ -32,7 +40,7 @@
   export default {
     name: 'thanks',
     metaInfo: {
-      title: 'WOFCON 2020 - Thanks',
+      title: 'Registration Complete - WOFCON 2020',
       htmlAttrs: {
         lang: 'en',
         amp: true
@@ -57,7 +65,7 @@
     text-decoration: none;
     fill: #1778f2;
   }
-  .main__image {
+  .thanks img {
     max-width: 365px;
     width: 100%;
     height: auto;
