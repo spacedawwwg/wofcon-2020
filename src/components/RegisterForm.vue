@@ -28,7 +28,7 @@
               id="input-group-0"
               label="Registration Code"
               description="4-digit code emailed to you after payment"
-              label-for="input-1"
+              label-for="input-0"
             >
               <b-form-input
                 id="input-0"
@@ -196,6 +196,29 @@
             </ValidationProvider>
           </section>
 
+          <div class="pt-2 mb-4">
+            <ValidationProvider
+              tag="div"
+              name="Terms"
+              rules="required"
+              mode="lazy"
+              v-slot="{ valid, errors }"
+              ref="terms"
+            >
+              <b-form-checkbox
+                id="input-3"
+                autocomplete="off"
+                v-model="acceptTerms"
+                aria-describedby="input-3-live-feedback"
+                :state="errors[0] ? false : valid ? true : null"
+                value="yes"
+                :unchecked-value="null"
+              >
+                I allow Weight of Fire to store and use my name and email to
+                contact me about WOFCON.
+              </b-form-checkbox>
+            </ValidationProvider>
+          </div>
           <b-button
             type="submit"
             block
@@ -263,6 +286,7 @@
     data() {
       return {
         submitting: false,
+        acceptTerms: null,
         registrationData: {
           code: null,
           name: null,
