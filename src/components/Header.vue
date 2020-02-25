@@ -26,10 +26,9 @@
 <style scoped>
 
   .header {
-    background-color: #a62c23;
-    background-image: url('../assets/bg-2--mobile.jpg');
+    background-color: #960000;
+    background-image: url('../assets/bg-3--mobile.jpg');
     background-size: cover;
-    background-attachment: fixed;
     background-position: 50% 50%;
     color: #fff;
     text-align: center;
@@ -44,7 +43,7 @@
     .header {
       width: 40%;
       height: 100vh;
-      background-image: url('../assets/bg-2--desktop.jpg');
+      background-image: url('../assets/bg-3--desktop.jpg');
       position: fixed;
       top: 0;
       left: 0;
@@ -62,7 +61,7 @@
     text-transform: uppercase;
     font-size: 24px;
     margin: 0;
-    font-family: 'Agency FB Bold', sans-serif;
+    font-family: din-condensed, sans-serif;
   }
 
   .header__subtitle span {
