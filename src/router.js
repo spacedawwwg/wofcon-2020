@@ -19,7 +19,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (thanks.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "thanks" */ './views/Registration.vue')
+      component: () => import(/* webpackChunkName: "registration" */ './views/Registration.vue')
     },
     {
       path: '/thanks',
