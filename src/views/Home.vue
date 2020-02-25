@@ -37,34 +37,34 @@
     <h2 class="pt-2">Weekend Format &amp; Schedule</h2>
     <b-list-group class="mb-4">
       <b-list-group-item>
-        Friday 2-10pm: Free Gaming and Social
+        <strong>Friday 2-10pm:</strong> Free Gaming and Social
       </b-list-group-item>
       <b-list-group-item>
-        Saturday 9am-5pm: Deadzone UK National Tournament
+        <strong>Saturday 9am-5pm:</strong> Deadzone UK National Tournament
       </b-list-group-item>
       <b-list-group-item>
-        Saturday 6pm-11pm: Dreadball Tournament
+        <strong>Saturday 6pm-11pm:</strong> Dreadball Tournament
       </b-list-group-item>
       <b-list-group-item>
-        Sunday 9am-5pm: Kings of War Vanguard Tournament
+        <strong>Sunday 9am-5pm:</strong> Kings of War Vanguard Tournament
       </b-list-group-item>
     </b-list-group>
     <h2 class="pt-2">Tickets</h2>
     <b-list-group class="mb-4">
       <b-list-group-item>
-        Full Weekend Pass (Saturday AND Sunday)
+        <strong>Full Weekend Pass</strong> (Saturday AND Sunday)
         <a class="buy-btn" href="https://paypal.me/weightoffire/35">
           &pound;35 - Buy Now
         </a>
       </b-list-group-item>
       <b-list-group-item>
-        Day Pass (Saturday OR Sunday)
+        <strong>Day Pass</strong> (Saturday OR Sunday)
         <a class="buy-btn" href="https://paypal.me/weightoffire/25">
           &pound;25 - Buy Now
         </a>
       </b-list-group-item>
       <b-list-group-item>
-        Dreadball Tournament (Saturday Evening)
+        <strong>Dreadball Tournament</strong> (Saturday Evening)
         <a class="buy-btn" href="https://paypal.me/weightoffire/15">
           &pound;15 - Buy Now
         </a>
@@ -108,6 +108,42 @@
       If you would like to sponsor our event, please get in touch:
       <a href="mailto:hello@weightoffire.com">hello@weightoffire.com</a>
     </p>
+
+    <h2 class="pt-2">Venue and Directions</h2>
+    <p>The event will be held at:</p>
+    <p>
+      Mantic Games <br />
+      193 Hempshill Ln <br />
+      Bulwell <br />
+      Nottingham <br />
+      NG6 8PF
+    </p>
+    <p>
+      In the event of getting lost or delayed please contact us via our Facebook
+      page.
+    </p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2401.2669100691787!2d-1.2080566841746883!3d52.997584979907536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879eb7cac78873b%3A0x1fe8fe78e0bbc95e!2sMantic%20Games!5e0!3m2!1sen!2suk!4v1582669220643!5m2!1sen!2suk"
+      width="100%"
+      height="280"
+      frameborder="0"
+      style="border:0"
+      allowfullscreen
+      class="mb-4"
+    ></iframe>
+
+    <div class="disclaimer">
+      <h4>Disclaimer</h4>
+      <small
+        >This tournament information may be subject to changes up to one week
+        before the tournament.</small
+      >
+      <br />
+      <small
+        >Refunds will only be given up to two weeks before the
+        tournament.</small
+      >
+    </div>
   </div>
 </template>
 
