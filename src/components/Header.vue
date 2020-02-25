@@ -59,9 +59,15 @@
     padding-top: 20px;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 18px;
     margin: 0;
     font-family: din-condensed, sans-serif;
+  }
+
+  @media only screen and (min-width: 750px) {
+    .header__subtitle {
+      font-size: 24px;
+    }
   }
 
   .header__subtitle span {

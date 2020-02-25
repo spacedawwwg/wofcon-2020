@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1 class="mb-3">
-      Welcome to WOFCON 2020
+      Welcome to WOFCON&nbsp;2020
     </h1>
     <p>
       Its Back and better than ever! This year we have been invited to host
@@ -14,7 +14,7 @@
       team. A relaxed and fun atmosphere with multiple tournaments running over
       the course of a weekend.
     </p>
-    <h2 class="pt-2">What's Included/Happening?</h2>
+    <h2 class="pt-2">What's Included / Happening?</h2>
     <ul class="mb-4">
       <li>Goody bag for every attendee.</li>
       <li>Free gaming all day on the Friday until 10pm.</li>
@@ -182,7 +182,7 @@
 
   .sponsors__sponsor {
     margin: 0;
-    padding: 0 0 0 30px;
+    padding: 0 15px 0 15px;
     max-width: 45%;
     display: inline-block;
     vertical-align: middle;
