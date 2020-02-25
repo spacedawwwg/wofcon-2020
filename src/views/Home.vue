@@ -10,14 +10,14 @@
     </p>
     <h2 class="pt-2">What is WOFCON?</h2>
     <p>
-      WOFCON is the Mantic Games centric event organised by the Weight of Fire
+      WOFCON is a Mantic Games centric gaming event organised by the Weight of Fire
       team. A relaxed and fun atmosphere with multiple tournaments running over
       the course of a weekend.
     </p>
     <h2 class="pt-2">What's Included/Happening?</h2>
     <ul class="mb-4">
-      <li>Goody bag for every attendee</li>
-      <li>Free gaming all day on the Friday until 10pm</li>
+      <li>Goody bag for every attendee.</li>
+      <li>Free gaming all day on the Friday until 10pm.</li>
       <li>
         Food (lunch on Saturday and Sunday and dinner Saturday night) and drink
         (soft and strong) all weekend.
