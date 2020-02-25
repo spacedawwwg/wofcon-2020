@@ -3,52 +3,51 @@
     class="register-form"
     :class="{ 'register-form--submitting': submitting }"
   >
-    <div class="main__header">
-      <p class="main__body">
+    <div class="register-form__header">
+      <p class="register-form__body">
         To register, you must have already purchased a ticket for the event.
-        Visit our
-        <a href="https://www.facebook.com/events/561636417895326">
-          Facebook event page
-        </a>
-        to find out how.
+        <router-link to="/">Purchase your ticket here</router-link>.
       </p>
     </div>
     <ValidationObserver tag="div" ref="observer" v-slot="{ passes }">
-      <b-form @submit.prevent="passes(onSubmit)" name="wofcon-registration">
-        <div class="mb-4">
-          <ValidationProvider
-            tag="div"
-            name="Code"
-            rules="required|numeric|isValidCode"
-            mode="lazy"
-            v-slot="{ valid, errors }"
-            ref="code"
+      <b-form
+        @submit.prevent="passes(onSubmit)"
+        name="wofcon-registration"
+        class="register-form__form"
+      >
+        <ValidationProvider
+          class="mb-4"
+          tag="div"
+          name="Code"
+          rules="required|numeric|isValidCode"
+          mode="lazy"
+          v-slot="{ valid, errors }"
+          ref="code"
+        >
+          <b-form-group
+            id="input-group-0"
+            label="Registration Code"
+            description="4-digit code emailed to you after payment"
+            label-for="input-0"
           >
-            <b-form-group
-              id="input-group-0"
-              label="Registration Code"
-              description="4-digit code emailed to you after payment"
-              label-for="input-0"
-            >
-              <b-form-input
-                id="input-0"
-                autocomplete="off"
-                v-model="registrationData.code"
-                placeholder="Enter code (e.g. 1234)"
-                aria-describedby="input-0-live-feedback"
-                :state="errors[0] ? false : valid ? true : null"
-                maxlength="4"
-              />
-              <b-form-invalid-feedback id="input-0-live-feedback">
-                {{ errors[0] }}
-              </b-form-invalid-feedback>
-            </b-form-group>
-          </ValidationProvider>
-        </div>
+            <b-form-input
+              id="input-0"
+              autocomplete="off"
+              v-model="registrationData.code"
+              placeholder="Enter code (e.g. 1234)"
+              aria-describedby="input-0-live-feedback"
+              :state="errors[0] ? false : valid ? true : null"
+              maxlength="4"
+            />
+            <b-form-invalid-feedback id="input-0-live-feedback">
+              {{ errors[0] }}
+            </b-form-invalid-feedback>
+          </b-form-group>
+        </ValidationProvider>
 
         <div :class="{ 'is-disabled': !isValidCode }">
           <section class="mb-4">
-            <h5>Attendee Details</h5>
+            <h4>Attendee Details</h4>
 
             <ValidationProvider
               tag="div"
@@ -107,7 +106,7 @@
           </section>
 
           <section class="mb-4">
-            <h5>Which tournament(s) are you registering for?</h5>
+            <h4>Which tournament(s) are you registering for?</h4>
 
             <ValidationProvider
               tag="div"
@@ -196,29 +195,29 @@
             </ValidationProvider>
           </section>
 
-          <div class="pt-2 mb-4">
-            <ValidationProvider
-              tag="div"
-              name="Terms"
-              rules="required"
-              mode="lazy"
-              v-slot="{ valid, errors }"
-              ref="terms"
+          <ValidationProvider
+            class="pt-2 mb-4"
+            tag="div"
+            name="Terms"
+            rules="required"
+            mode="lazy"
+            v-slot="{ valid, errors }"
+            ref="terms"
+          >
+            <b-form-checkbox
+              id="input-3"
+              autocomplete="off"
+              v-model="acceptTerms"
+              aria-describedby="input-3-live-feedback"
+              :state="errors[0] ? false : valid ? true : null"
+              value="yes"
+              :unchecked-value="null"
             >
-              <b-form-checkbox
-                id="input-3"
-                autocomplete="off"
-                v-model="acceptTerms"
-                aria-describedby="input-3-live-feedback"
-                :state="errors[0] ? false : valid ? true : null"
-                value="yes"
-                :unchecked-value="null"
-              >
-                I allow Weight of Fire to store and use my name and email to
-                contact me about WOFCON.
-              </b-form-checkbox>
-            </ValidationProvider>
-          </div>
+              I allow Weight of Fire to store and use my name and email to
+              contact me about WOFCON.
+            </b-form-checkbox>
+          </ValidationProvider>
+
           <b-button
             type="submit"
             block
@@ -230,6 +229,7 @@
             Register
           </b-button>
         </div>
+        
       </b-form>
     </ValidationObserver>
     <div class="loading" v-if="submitting">
@@ -370,18 +370,37 @@
 
 <style>
   .register-form {
-    width: 100%;
-    float: left;
-    position: relative;
   }
-  .register-form form {
+  .register-form__form {
     position: relative;
     z-index: 1;
+    max-width: 500px;
   }
   .register-form .btn-primary {
     background: #e53e3e;
     border-color: #e53e3e;
     color: #fff;
+  }
+  .register-form__header {
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+  }
+  .register-form__header h4 {
+    margin: 0;
+    padding: 0;
+  }
+  .register-form__subtitle {
+    font-size: 16px;
+    color: #777;
+    margin: 0;
+    padding: 5px 0 0;
+  }
+  .register-form__body {
+    font-size: 16px;
+    color: #777;
+    margin: 0;
+    padding: 0;
   }
   .is-disabled {
     opacity: 0.2;
