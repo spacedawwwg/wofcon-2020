@@ -32,11 +32,10 @@
     background-position: 50% 50%;
     color: #fff;
     text-align: center;
-    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px;
+    padding: 40px;
   }
 
   @media only screen and (min-width: 1000px) {
