@@ -159,7 +159,8 @@
         {
           key: 'description',
           name: 'description',
-          content: 'WOFCON 2020 is a Weight of Fire & Mantic Games Event being held from 18th-19th September 2020'
+          content:
+            'WOFCON 2020 is a Weight of Fire & Mantic Games Event being held from 18th-19th September 2020'
         },
         {
           property: 'og:url',
@@ -174,9 +175,18 @@
         },
         {
           property: 'og:description',
-          content: 'A Weight of Fire & Mantic Games Event - 19th to 20th September 2020'
+          content:
+            'A Weight of Fire & Mantic Games Event - 19th to 20th September 2020'
         }
       ]
+    },
+    mounted() {
+      if (this.$route.query.code) {
+        this.$router.push({
+          name: 'registration',
+          query: this.$route.query
+        });
+      }
     }
   };
 </script>
