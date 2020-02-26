@@ -222,7 +222,6 @@
             type="submit"
             block
             variant="dark"
-            class="float-right"
             ref="submitBtn"
             :disabled="!isValidCode"
           >
