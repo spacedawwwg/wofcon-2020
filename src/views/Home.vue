@@ -37,7 +37,7 @@
     <h2 class="pt-2">Weekend Format &amp; Schedule</h2>
     <b-list-group class="mb-4">
       <b-list-group-item>
-        <strong>Friday 2-10pm:</strong> Free Gaming and Social
+        <strong>Friday 2pm-10pm:</strong> Free Gaming and Social
       </b-list-group-item>
       <b-list-group-item>
         <strong>Saturday 9am-5pm:</strong> Deadzone UK National Tournament
