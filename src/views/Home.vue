@@ -109,7 +109,7 @@
       <a href="mailto:hello@weightoffire.com">hello@weightoffire.com</a>
     </p>
 
-    <h2 class="pt-2">Venue and Directions</h2>
+    <h2 class="pt-2">Venue &amp; Directions</h2>
     <p>The event will be held at:</p>
     <p>
       Mantic Games <br />
