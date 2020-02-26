@@ -4,15 +4,15 @@
       Welcome to WOFCON&nbsp;2020
     </h1>
     <p>
-      Its Back and better than ever! This year we have been invited to host
-      WOFCON at Mantic Games HQ in Nottingham, UK so we couldn't possibly
-      refuse.
+      Its back and better than ever! This year we have been invited to host
+      WOFCON at Mantic Games HQ in Nottingham, UK&hellip; so we couldn't
+      possibly refuse.
     </p>
     <h2 class="pt-2">What is WOFCON?</h2>
     <p>
-      WOFCON is a Mantic Games centric gaming event organised by the Weight of Fire
-      team. A relaxed and fun atmosphere with multiple tournaments running over
-      the course of a weekend.
+      WOFCON is a Mantic Games centric gaming event organised by the Weight of
+      Fire team. A relaxed and fun atmosphere with multiple tournaments running
+      over the course of a weekend.
     </p>
     <h2 class="pt-2">What's Included / Happening?</h2>
     <ul class="mb-4">
@@ -27,11 +27,11 @@
         great stuff, we just cant talk about it right now!).
       </li>
       <li>
-        If you are hanging around in Nottingham then some of the Weigth of Fire
+        If you are hanging around in Nottingham, then some of the Weight of Fire
         crew will be doing a little gaming related tourism on the Monday if
         you'd like to join us. Fire us an email at
         <a href="mailto:hello@weightoffire.com">hello@weightoffire.com</a> to
-        find out more of what we have planned.
+        find out more on what we have planned.
       </li>
     </ul>
     <h2 class="pt-2">Weekend Format &amp; Schedule</h2>
@@ -134,15 +134,14 @@
 
     <div class="disclaimer">
       <h4>Disclaimer</h4>
-      <small
-        >This tournament information may be subject to changes up to one week
-        before the tournament.</small
-      >
+      <small>
+        Any event/tournament information may be subject to changes up to one
+        week before the event.
+      </small>
       <br />
-      <small
-        >Refunds will only be given up to two weeks before the
-        tournament.</small
-      >
+      <small>
+        Refunds will only be given up to two weeks before the event.
+      </small>
     </div>
   </div>
 </template>
