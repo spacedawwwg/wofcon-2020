@@ -33,7 +33,7 @@
   a:focus,
   a:visited,
   a:active {
-    color: #a62c23 !important;
+    color: #960000 !important;
   }
   h1,
   h2,

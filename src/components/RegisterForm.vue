@@ -228,17 +228,16 @@
             Register
           </b-button>
         </div>
-        
+        <div class="loading" v-if="submitting">
+          <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
       </b-form>
     </ValidationObserver>
-    <div class="loading" v-if="submitting">
-      <div class="loader">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -369,15 +368,17 @@
 
 <style>
   .register-form {
+    position: relative;
   }
   .register-form__form {
     position: relative;
-    z-index: 1;
     max-width: 500px;
+    overflow: hidden;
+    z-index: 1;
   }
   .register-form .btn-primary {
-    background: #e53e3e;
-    border-color: #e53e3e;
+    background: #960000;
+    border-color: #960000;
     color: #fff;
   }
   .register-form__header {
@@ -429,7 +430,7 @@
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background: #e53e3e;
+    background: #960000;
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
   }
   .loader div:nth-child(1) {

@@ -80,27 +80,27 @@
     <ul class="sponsors">
       <li class="sponsors__sponsor sponsors__sponsor--mantic">
         <a href="https://www.manticgames.com/" target="_blank">
-          <img src="/logo-mantic_000000.png" alt="Mantic" />
+          <img src="@/assets/logo-mantic_000000.png" alt="Mantic" />
         </a>
       </li>
       <li class="sponsors__sponsor sponsors__sponsor--deepcutstudios">
         <a href="https://www.deepcutstudio.com/" target="_blank">
-          <img src="/logo-deepcutstudios.png" alt="Deep Cut Studios" />
+          <img src="@/assets/logo-deepcutstudios.png" alt="Deep Cut Studios" />
         </a>
       </li>
       <li class="sponsors__sponsor sponsors__sponsor--gamemateu">
         <a href="https://www.gamemat.eu/" target="_blank">
-          <img src="/logo-gamemateu.png" alt="Gamemat.eu" />
+          <img src="@/assets/logo-gamemateu.png" alt="Gamemat.eu" />
         </a>
       </li>
       <li class="sponsors__sponsor sponsors__sponsor--krmulticase">
         <a href="https://krmulticase.com/" target="_blank">
-          <img src="/logo-krmulticase.png" alt="KR Multicase" />
+          <img src="@/assets/logo-krmulticase.png" alt="KR Multicase" />
         </a>
       </li>
       <li class="sponsors__sponsor sponsors__sponsor--kromlech">
         <a href="https://www.kromlech.eu/" target="_blank">
-          <img src="/logo-kromlech.png" alt="Kromlech" />
+          <img src="@/assets/logo-kromlech.png" alt="Kromlech" />
         </a>
       </li>
     </ul>
