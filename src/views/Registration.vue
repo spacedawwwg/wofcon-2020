@@ -42,7 +42,7 @@
         },
         {
           property: 'og:description',
-          content: 'A Weight of Fire & Mantic Games Event'
+          content: 'A Weight of Fire & Mantic Games Event - 19th to 20th September 2020'
         }
       ]
     }
