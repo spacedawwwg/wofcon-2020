@@ -14,18 +14,9 @@
         @submit.prevent="passes(onSubmit)"
         name="wofcon-registration"
         class="register-form__form"
-        action="/thanks/"
+        action="https://weightoffire.com/wofcon/email-registration/"
         method="POST"
-        netlify-honeypot="bot-field"
-        data-netlify="true"
       >
-        <input type="hidden" name="form-name" value="wofcon2020-registration" />
-        <p hidden>
-          <label>
-            Ingnore this field if you're human:
-            <input name="bot-field" />
-          </label>
-        </p>
         <ValidationProvider
           class="mb-4"
           tag="div"
@@ -348,9 +339,8 @@
         this.$refs.submitBtn.blur();
         const requests = [
           axios.post(
-            '/registration',
+            'https://weightoffire.com/wofcon/email-registration/',
             this.encode({
-              'form-name': 'wofcon2020-registration',
               ...this.registrationData
             })
           ),
@@ -397,7 +387,6 @@
   .register-form__form {
     position: relative;
     max-width: 500px;
-    overflow: hidden;
     z-index: 1;
   }
   .register-form .btn-primary {
