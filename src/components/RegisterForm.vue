@@ -347,11 +347,16 @@
         this.submitting = true;
         this.$refs.submitBtn.blur();
         const req1 = axios.post(
-          '/registration/',
+          '/',
           this.encode({
             'form-name': 'wofcon2020-registration',
             ...this.registrationData
-          })
+          }),
+          {
+            header: {
+              'Content-Type': 'application/x-www-form-urlencoded'
+            }
+          }
         );
         const req2 = axios.post(
           'https://script.google.com/macros/s/AKfycby6Rlm_3kItgvpT__ufbYKT5SB41gAF2VunQwCajcFPJFjugtw/exec',
