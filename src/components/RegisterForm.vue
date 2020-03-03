@@ -347,7 +347,7 @@
         this.submitting = true;
         this.$refs.submitBtn.blur();
         const req1 = axios.post(
-          '/',
+          '/registration/',
           this.encode({
             'form-name': 'wofcon2020-registration',
             ...this.registrationData
