@@ -13,8 +13,15 @@ module.exports = {
           staticDir: path.join(__dirname, 'dist'),
           // Required - Routes to render.
           routes: ['/', '/thanks', '/registration']
-        }),
+        })
       ]
     };
+  },
+  devServer: {
+    before: function(app) {
+      app.post('/registration', function(req, res) {
+        res.redirect('/registration');
+      });
+    }
   }
 };
