@@ -14,7 +14,18 @@
         @submit.prevent="passes(onSubmit)"
         name="wofcon-registration"
         class="register-form__form"
+        action="/thanks/"
+        method="POST"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
       >
+        <input type="hidden" name="form-name" value="wofcon2020-registration" />
+        <p hidden>
+          <label>
+            Ingnore this field if you're human:
+            <input name="bot-field" />
+          </label>
+        </p>
         <ValidationProvider
           class="mb-4"
           tag="div"
@@ -335,28 +346,40 @@
       onSubmit() {
         this.submitting = true;
         this.$refs.submitBtn.blur();
-        axios
-          .post(
-            'https://script.google.com/macros/s/AKfycby6Rlm_3kItgvpT__ufbYKT5SB41gAF2VunQwCajcFPJFjugtw/exec',
-            this.encode(this.registrationData)
-          )
-          .then(response => {
-            this.submitting = false;
-            if (response.data.error) {
-              this.error = response.data.error;
-              window.alert('Sorry, there was an error');
-              return;
-            }
-            this.$router.push({
-              name: 'thanks',
-              params: {
-                name: this.registrationData.name
-              },
-              query: {
-                name: this.registrationData.name
-              }
-            });
+        const req1 = axios.post(
+          '/',
+          this.encode({
+            'form-name': 'wofcon2020-registration',
+            ...this.registrationData
           })
+        );
+        const req2 = axios.post(
+          'https://script.google.com/macros/s/AKfycby6Rlm_3kItgvpT__ufbYKT5SB41gAF2VunQwCajcFPJFjugtw/exec',
+          this.encode({
+            ...this.registrationData
+          })
+        );
+        axios
+          .all([req1, req2])
+          .then(
+            axios.spread((...responses) => {
+              this.submitting = false;
+              if (responses[0].data.error || responses[1].data.error) {
+                this.error = responses[0].data.error || responses[1].data.error;
+                window.alert('Sorry, there was an error');
+                return;
+              }
+              this.$router.push({
+                name: 'thanks',
+                params: {
+                  name: this.registrationData.name
+                },
+                query: {
+                  name: this.registrationData.name
+                }
+              });
+            })
+          )
           .catch(error => {
             this.error = error;
           });
