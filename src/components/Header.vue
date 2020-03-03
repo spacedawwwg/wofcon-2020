@@ -24,10 +24,9 @@
 </script>
 
 <style scoped>
-
   .header {
     background-color: #960000;
-    background-image: url('../assets/bg-3--mobile.jpg');
+    background-image: url('../assets/bg--mobile.jpg');
     background-size: cover;
     background-position: 50% 50%;
     color: #fff;
@@ -42,7 +41,7 @@
     .header {
       width: 40%;
       height: 100vh;
-      background-image: url('../assets/bg-3--desktop.jpg');
+      background-image: url('../assets/bg--desktop.jpg');
       position: fixed;
       top: 0;
       left: 0;
@@ -89,7 +88,7 @@
       max-width: 175px;
     }
   }
-  
+
   @media only screen and (min-width: 1000px) {
     .header img {
       max-width: 300px;

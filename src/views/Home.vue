@@ -80,7 +80,7 @@
     <ul class="sponsors">
       <li class="sponsors__sponsor sponsors__sponsor--mantic">
         <a href="https://www.manticgames.com/" target="_blank">
-          <img src="@/assets/logo-mantic_000000.png" alt="Mantic" />
+          <img src="@/assets/logo-mantic.png" alt="Mantic" />
         </a>
       </li>
       <li class="sponsors__sponsor sponsors__sponsor--deepcutstudios">
