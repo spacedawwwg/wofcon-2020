@@ -13,7 +13,6 @@
 </script>
 
 <style scoped>
-
   .main {
     background-color: #fff;
   }
@@ -45,5 +44,4 @@
       padding: 80px;
     }
   }
-
 </style>

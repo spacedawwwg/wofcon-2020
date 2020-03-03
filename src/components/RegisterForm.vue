@@ -296,7 +296,8 @@
         options: [
           { text: 'Yes', value: 'Yes' },
           { text: 'No', value: 'No' }
-        ]
+        ],
+        error: null
       };
     },
     computed: {
@@ -334,7 +335,6 @@
       onSubmit() {
         this.submitting = true;
         this.$refs.submitBtn.blur();
-        console.log(this.registrationData);
         axios
           .post(
             'https://script.google.com/macros/s/AKfycby6Rlm_3kItgvpT__ufbYKT5SB41gAF2VunQwCajcFPJFjugtw/exec',
@@ -343,7 +343,7 @@
           .then(response => {
             this.submitting = false;
             if (response.data.error) {
-              console.error(response.data.error);
+              this.error = response.data.error;
               window.alert('Sorry, there was an error');
               return;
             }
@@ -358,8 +358,7 @@
             });
           })
           .catch(error => {
-            console.error(error);
-            this.errored = true;
+            this.error = error;
           });
       }
     }

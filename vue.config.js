@@ -1,5 +1,7 @@
-const path = require('path')
-const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const path = require('path');
+const PrerenderSPAPlugin = require('prerender-spa-plugin');
+const glob = require('glob');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
 
 module.exports = {
   configureWebpack: () => {
@@ -12,9 +14,15 @@ module.exports = {
           // Required - The path to the webpack-outputted app to prerender.
           staticDir: path.join(__dirname, 'dist'),
           // Required - Routes to render.
-          routes: [ '/', '/thanks', '/registration'],
+          routes: ['/', '/thanks', '/registration']
+        }),
+
+        new PurgecssPlugin({
+          paths: glob.sync(`${path.join(__dirname, 'src')}/**/*`, {
+            nodir: true
+          })
         })
       ]
-    }
+    };
   }
-}
+};

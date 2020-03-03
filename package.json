@@ -25,6 +25,17 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "postcss": "^7.0.27",
+    "postcss-calc": "^7.0.2",
+    "postcss-focus-within": "^3.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-pxtorem": "^5.1.0",
+    "postcss-remove-root": "^0.0.2",
+    "postcss-reporter": "^6.0.1",
+    "purgecss": "^2.1.0",
+    "purgecss-webpack-plugin": "^2.1.0",
     "vue-template-compiler": "^2.6.10"
   }
 }
