@@ -130,6 +130,7 @@
       style="border:0"
       allowfullscreen
       class="mb-4"
+      title="Google map to Mantic HQ"
     ></iframe>
 
     <div class="disclaimer">
