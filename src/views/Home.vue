@@ -80,27 +80,27 @@
     <ul class="sponsors">
       <li class="sponsors__sponsor sponsors__sponsor--mantic">
         <a href="https://www.manticgames.com/">
-          <img src="@/assets/logo-mantic.png" alt="Mantic" />
+          <img src="@/assets/logo-mantic.png" alt="Mantic" width="100" loading="lazy" />
         </a>
       </li>
       <li class="sponsors__sponsor sponsors__sponsor--deepcutstudios">
         <a href="https://www.deepcutstudio.com/">
-          <img src="@/assets/logo-deepcutstudios.png" alt="Deep Cut Studios" />
+          <img src="@/assets/logo-deepcutstudios.png" alt="Deep Cut Studios" width="100" loading="lazy" />
         </a>
       </li>
       <li class="sponsors__sponsor sponsors__sponsor--gamemateu">
         <a href="https://www.gamemat.eu/">
-          <img src="@/assets/logo-gamemateu.png" alt="Gamemat.eu" />
+          <img src="@/assets/logo-gamemateu.png" alt="Gamemat.eu" width="100" loading="lazy" />
         </a>
       </li>
       <li class="sponsors__sponsor sponsors__sponsor--krmulticase">
         <a href="https://krmulticase.com/">
-          <img src="@/assets/logo-krmulticase.png" alt="KR Multicase" />
+          <img src="@/assets/logo-krmulticase.png" alt="KR Multicase" width="100" loading="lazy" />
         </a>
       </li>
       <li class="sponsors__sponsor sponsors__sponsor--kromlech">
         <a href="https://www.kromlech.eu/">
-          <img src="@/assets/logo-kromlech.png" alt="Kromlech" />
+          <img src="@/assets/logo-kromlech.png" alt="Kromlech" width="100" loading="lazy" s/>
         </a>
       </li>
     </ul>
